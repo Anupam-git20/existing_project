@@ -1,0 +1,16 @@
+plot(1:100, (1:100) ^ 2, main = "plot(1:100, (1:100) ^ 2)")
+x<-(1:10)
+y<-(5)
+print (x+y)
+print (x*y)
+
+print("You’re seeing this because the linux account that gives you access to RStudio lacks a small file in your home directory called .gitconfig. This tells Git on the RStudio server who you are.  The error window is in fact telling you exactly what you need to do to create a .gitconfig account in your home directory yourself. For the most part, you don’t have access to the linux shell that RStudio Pro runs in; you interact with your files and projects completely through RStudio Pro. However, you can use RStudio to get enough access to linux to create a .gitconfig file. In RStudio, under the Tools directory, choose Shell…")
+print("Once you do this, a pop-up window will open in RStudio, giving you limited shell access to linux on the RStudio server.  You’ll have a prompt that ends in a $. From here, simply enter the two commands in the original error message, hitting return after each command (no error message after hitting return means that the command was accepted):
+git config --global user.email "<your email address>"
+
+git config --global user.name "<your name>"
+ 
+
+… just make sure to customize the information inside the quotes to  whatever email address you care to use, and your full name.
+
+You now have a valid .gitconfig file in your home directory, and you’ll be able to commit, push and pull from GitHub. Note that when you do a git push or pull, you’ll need to provide your GitHub username and password through RStudio to authenticate that you’re allowed to access the remote repository.")
